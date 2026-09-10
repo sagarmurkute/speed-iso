@@ -1,0 +1,14 @@
+[package]
+name = "speediso-cli"
+version = "0.1.0"
+edition = "2021"
+description = "SpeedISO Command-line interface and testing utility"
+
+[dependencies]
+speediso-detect = { path = "../speediso-detect" }
+speediso-core = { path = "../speediso-core" }
+speediso-boot = { path = "../speediso-boot" }
+clap.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

@@ -1,0 +1,9 @@
+[package]
+name = "speediso-core"
+version = "0.1.0"
+edition = "2021"
+description = "Low-level direct I/O, sector alignment, streaming engine for SpeedISO"
+
+[dependencies]
+thiserror.workspace = true
+tracing.workspace = true

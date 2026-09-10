@@ -1,0 +1,9 @@
+[package]
+name = "speediso-boot"
+version = "0.1.0"
+edition = "2021"
+description = "Bootloader partitioning, dual-partition setup, and unattend XML injection"
+
+[dependencies]
+thiserror.workspace = true
+tracing.workspace = true
