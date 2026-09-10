@@ -5,5 +5,18 @@ edition = "2021"
 description = "Low-level direct I/O, sector alignment, streaming engine for SpeedISO"
 
 [dependencies]
+speediso-detect = { path = "../speediso-detect" }
 thiserror.workspace = true
+serde.workspace = true
 tracing.workspace = true
+sha2.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Ioctl",
+    "Win32_System_IO",
+    "Win32_System_WindowsProgramming",
+    "Win32_Security",
+] }
